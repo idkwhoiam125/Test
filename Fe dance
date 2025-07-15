@@ -1755,17 +1755,17 @@ end)
 
 
 
--- Dance 36 (EYOP)
+-- Dance 36 (PP)
 local player = game.Players.LocalPlayer
 local backpack = player:WaitForChild("Backpack")
 
 -- Create the tool
 local tool = Instance.new("Tool")
-tool.Name = "EYE POP"
+tool.Name = "Peter Parker"
 tool.RequiresHandle = false
 tool.Parent = backpack
 
-writefile("The Hero.mp3", game:HttpGet("https://github.com/lolidkwhy678/lolsong/raw/refs/heads/main/kj-2nd-ult-made-with-Voicemod.mp3"))     
+writefile("bully-maguire-theme.mp3", game:HttpGet("https://www.myinstants.com/media/sounds/bully-maguire-theme.mp3"))
 -- Load Animator if not already loaded
 if not getgenv()["Animator"] then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/xhayper/Animator/main/Source/Main.lua"))()
@@ -1777,13 +1777,13 @@ local sound = nil
 tool.Equipped:Connect(function()
 	local character = player.Character
 	if character then
-		Anim = Animator.new(character, 78656000192491)
+		Anim = Animator.new(character, 102086966523840)
 		Anim:Play()
 		Anim.Stopped:Connect(function()
 			Anim:Play()
 		end)
 		sound = Instance.new("Sound")
-		sound.SoundId = getcustomasset("The Hero.mp3")
+		sound.SoundId = getcustomasset("bully-maguire-theme.mp3")
 		sound.Volume = 2
 		sound.Looped = true
 		sound.Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
@@ -1805,17 +1805,17 @@ end)
 
 
 
--- Dance 37 (PP)
+-- Dance 37 (RD)
 local player = game.Players.LocalPlayer
 local backpack = player:WaitForChild("Backpack")
 
 -- Create the tool
 local tool = Instance.new("Tool")
-tool.Name = "Peter Parker"
+tool.Name = "Rat Dance"
 tool.RequiresHandle = false
 tool.Parent = backpack
 
-writefile("lol.mp3", game:HttpGet("https://github.com/lolidkwhy678/lolsong/raw/refs/heads/main/Audioflexworks_music.mp3"))
+writefile("Joyful_-_Chess_Rat_Dance_.mp3", game:HttpGet("https://www.dopexclusive.com/wp-content/uploads/2025/02/Joyful_-_Chess_Rat_Dance_.mp3"))
 -- Load Animator if not already loaded
 if not getgenv()["Animator"] then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/xhayper/Animator/main/Source/Main.lua"))()
@@ -1827,13 +1827,13 @@ local sound = nil
 tool.Equipped:Connect(function()
 	local character = player.Character
 	if character then
-		Anim = Animator.new(character, 102086966523840)
+		Anim = Animator.new(character, 104525136565640)
 		Anim:Play()
 		Anim.Stopped:Connect(function()
 			Anim:Play()
 		end)
 		sound = Instance.new("Sound")
-		sound.SoundId = getcustomasset("lol.mp3")
+		sound.SoundId = getcustomasset("Joyful_-_Chess_Rat_Dance_.mp3")
 		sound.Volume = 2
 		sound.Looped = true
 		sound.Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
@@ -1855,57 +1855,7 @@ end)
 
 
 
--- Dance 38 (RD)
-local player = game.Players.LocalPlayer
-local backpack = player:WaitForChild("Backpack")
-
--- Create the tool
-local tool = Instance.new("Tool")
-tool.Name = "Rat Dance"
-tool.RequiresHandle = false
-tool.Parent = backpack
-
-writefile("The Flop.mp3", game:HttpGet("https://github.com/gObl00x/Epik-Musics/raw/refs/heads/main/The%20Flop.mp3"))
--- Load Animator if not already loaded
-if not getgenv()["Animator"] then
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/xhayper/Animator/main/Source/Main.lua"))()
-end
-
-local Anim = nil
-local sound = nil
-
-tool.Equipped:Connect(function()
-	local character = player.Character
-	if character then
-		Anim = Animator.new(character, 104525136565640)
-		Anim:Play()
-		Anim.Stopped:Connect(function()
-			Anim:Play()
-		end)
-		sound = Instance.new("Sound")
-		sound.SoundId = getcustomasset("The Flop.mp3")
-		sound.Volume = 2
-		sound.Looped = true
-		sound.Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
-		sound:Play()
-	end
-end)
-
-tool.Unequipped:Connect(function()
-	if Anim then
-		Anim:Stop()
-		Anim:Destroy()
-	end
-	if sound then
-		sound:Stop()
-		sound:Destroy()
-	end
-	print("Dance 38 and music stopped")
-end)
-
-
-
--- Dance 39 (Gridy)
+-- Dance 38 (Gridy)
 local player = game.Players.LocalPlayer
 local backpack = player:WaitForChild("Backpack")
 
@@ -1915,7 +1865,7 @@ tool.Name = "Griddy"
 tool.RequiresHandle = false
 tool.Parent = backpack
 
-writefile("Club Penguin.mp3", game:HttpGet("https://github.com/lolidkwhy678/lolsong/raw/refs/heads/main/kj-ultimate.mp3"))
+writefile("9convert_f28qQKC.mp3", game:HttpGet("https://www.myinstants.com/media/sounds/9convert_f28qQKC.mp3"))
 -- Load Animator if not already loaded
 if not getgenv()["Animator"] then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/xhayper/Animator/main/Source/Main.lua"))()
@@ -1933,7 +1883,7 @@ tool.Equipped:Connect(function()
 			Anim:Play()
 		end)
 		sound = Instance.new("Sound")
-		sound.SoundId = getcustomasset("Club Penguin.mp3")
+		sound.SoundId = getcustomasset("9convert_f28qQKC.mp3")
 		sound.Volume = 2
 		sound.Looped = true
 		sound.Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
@@ -1950,5 +1900,5 @@ tool.Unequipped:Connect(function()
 		sound:Stop()
 		sound:Destroy()
 	end
-	print("Dance 39 and music stopped")
+	print("Dance 38 and music stopped")
 end)
