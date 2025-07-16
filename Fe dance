@@ -2014,7 +2014,7 @@ tool.Name = "Mafia Snap"
 tool.RequiresHandle = false
 tool.Parent = backpack
 
-writefile("chase-old-mafioso-chase-theme.mp3", game:HttpGet("https://www.myinstants.com/media/sounds/chase-old-mafioso-chase-theme.mp3FFlZ3p3dU1jd3NOSGtQQWVMaXE4SHNrR2g0RkpmRWs3WFdPcUtmejRrTk50M0xQUy8rV0h1MVZDN0dCbGszYUYvVzROMERLUU9aVjRhTXV4MjE3Um1iQUdBbVlnZmJ1cnRmVHRVUWV4bCtkNWs1MlUwSEYxU2ZmSHZESlJQdlAzcWNFYWxXSkRpZVEwUWt3MHlZaldUQXR0SStjRm1qc2R1bVhpTGtmYkpGcW80U3J3eTRHK21SZWlyL1RXNmdVd0JhclMwRUZscWhvbUlsOFVMdnJoUnQ0eFJLZjNodDVaNEZROGU3Y2U0SUZjMzViMW5tNTJrRE81WnFTaUtmcUdrMmFkZjVlbUxlR1pJTVFDSzBsdlA1UVpHdEhRMFJ2VUJ3QlVoNVIxZ0hhd05Lc2loWGNZeGNGUzZYMktLdlFRQjEzcjc4WlJBaTNxSWtlbmJjVC9xNXhoSkNXckhPM21LT0Y0NzNBdXVSUXZRUmxESlRxdDVaRFEyV0JaSmZhRlprSkh6TWVYYjJYOHZRdWZLNG5uQ0hHL0UyOERpVXBXVXM4V3FPRmU5VXBlTFV5TE81UXJodjRBVHo"))
+writefile("chase-old-mafioso-chase-theme.mp3", game:HttpGet("https://www.myinstants.com/media/sounds/chase-old-mafioso-chase-theme.mp3"))
 -- Load Animator if not already loaded
 if not getgenv()["Animator"] then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/xhayper/Animator/main/Source/Main.lua"))()
