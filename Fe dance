@@ -1905,17 +1905,17 @@ end)
 
 
 
--- Dance 39 (LiveseyWalk)
+-- Dance 39 (AwShucks)
 local player = game.Players.LocalPlayer
 local backpack = player:WaitForChild("Backpack")
 
 -- Create the tool
 local tool = Instance.new("Tool")
-tool.Name = "Livesey Walk"
+tool.Name = "Aw Shucks"
 tool.RequiresHandle = false
 tool.Parent = backpack
 
-writefile("dr-livesey.mp3", game:HttpGet("https://www.myinstants.com/media/sounds/dr-livesey.mp3"))
+writefile("shucks-v2-v3-vocals.mp3", game:HttpGet("https://www.myinstants.com/media/sounds/shucks-v2-v3-vocals.mp3"))
 -- Load Animator if not already loaded
 if not getgenv()["Animator"] then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/xhayper/Animator/main/Source/Main.lua"))()
@@ -1927,13 +1927,13 @@ local sound = nil
 tool.Equipped:Connect(function()
 	local character = player.Character
 	if character then
-		Anim = Animator.new(character, 139876229500486)
+		Anim = Animator.new(character, 74238051754912)
 		Anim:Play()
 		Anim.Stopped:Connect(function()
 			Anim:Play()
 		end)
 		sound = Instance.new("Sound")
-		sound.SoundId = getcustomasset("dr-livesey.mp3")
+		sound.SoundId = getcustomasset("shucks-v2-v3-vocals.mp3")
 		sound.Volume = 2
 		sound.Looped = true
 		sound.Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
