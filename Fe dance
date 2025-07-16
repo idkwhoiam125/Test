@@ -1515,7 +1515,7 @@ local backpack = player:WaitForChild("Backpack")
 
 -- Create the tool
 local tool = Instance.new("Tool")
-tool.Name = "New UPDATE I WANNA RUN AWAY🗣️"
+tool.Name = "I WANNA RUN AWAY🗣️"
 tool.RequiresHandle = false
 tool.Parent = backpack
 
@@ -1531,7 +1531,7 @@ local sound = nil
 tool.Equipped:Connect(function()
     local character = player.Character
     if character then
-        Anim = Animator.new(character, 95169538787696)
+        Anim = Animator.new(character, 131562546189485)
         Anim:Play()
         Anim.Stopped:Connect(function()
             Anim:Play()
