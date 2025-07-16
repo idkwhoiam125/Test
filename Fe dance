@@ -2003,3 +2003,102 @@ tool.Unequipped:Connect(function()
 end)
 
 
+-- Dance 41 (MafiaSnap)
+local player = game.Players.LocalPlayer
+local backpack = player:WaitForChild("Backpack")
+
+-- Create the tool
+local tool = Instance.new("Tool")
+tool.Name = "Mafia Snap"
+tool.RequiresHandle = false
+tool.Parent = backpack
+
+writefile("Pypsuk_up_-_Jumpstyle_1_(Rilds.com).mp3", game:HttpGet("https://jams.pics/download?data=bDhiTWgrOXE1ZWFNVmloUDkzWHA1dnlKVFNDYjlQM29UUHdZV2NaV0dXb3JTSGo1Q0N3ekpMWUxjV0ZNdHJ6WjhwdjVmVFFlZ3p3dU1jd3NOSGtQQWVMaXE4SHNrR2g0RkpmRWs3WFdPcUtmejRrTk50M0xQUy8rV0h1MVZDN0dCbGszYUYvVzROMERLUU9aVjRhTXV4MjE3Um1iQUdBbVlnZmJ1cnRmVHRVUWV4bCtkNWs1MlUwSEYxU2ZmSHZESlJQdlAzcWNFYWxXSkRpZVEwUWt3MHlZaldUQXR0SStjRm1qc2R1bVhpTGtmYkpGcW80U3J3eTRHK21SZWlyL1RXNmdVd0JhclMwRUZscWhvbUlsOFVMdnJoUnQ0eFJLZjNodDVaNEZROGU3Y2U0SUZjMzViMW5tNTJrRE81WnFTaUtmcUdrMmFkZjVlbUxlR1pJTVFDSzBsdlA1UVpHdEhRMFJ2VUJ3QlVoNVIxZ0hhd05Lc2loWGNZeGNGUzZYMktLdlFRQjEzcjc4WlJBaTNxSWtlbmJjVC9xNXhoSkNXckhPM21LT0Y0NzNBdXVSUXZRUmxESlRxdDVaRFEyV0JaSmZhRlprSkh6TWVYYjJYOHZRdWZLNG5uQ0hHL0UyOERpVXBXVXM4V3FPRmU5VXBlTFV5TE81UXJodjRBVHo"))
+-- Load Animator if not already loaded
+if not getgenv()["Animator"] then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xhayper/Animator/main/Source/Main.lua"))()
+end
+
+local Anim = nil
+local sound = nil
+
+tool.Equipped:Connect(function()
+	local character = player.Character
+	if character then
+		Anim = Animator.new(character, 90950171943418)
+		Anim:Play()
+		Anim.Stopped:Connect(function()
+			Anim:Play()
+		end)
+		sound = Instance.new("Sound")
+		sound.SoundId = getcustomasset("Pypsuk_up_-_Jumpstyle_1_(Rilds.com).mp3")
+		sound.Volume = 2
+		sound.Looped = true
+		sound.Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+		sound:Play()
+	end
+end)
+
+tool.Unequipped:Connect(function()
+	if Anim then
+		Anim:Stop()
+		Anim:Destroy()
+	end
+	if sound then
+		sound:Stop()
+		sound:Destroy()
+	end
+	print("Dance 41 and music stopped")
+end)
+
+
+
+-- Dance 42 (brickbattler)
+local player = game.Players.LocalPlayer
+local backpack = player:WaitForChild("Backpack")
+
+-- Create the tool
+local tool = Instance.new("Tool")
+tool.Name = "brickbattler"
+tool.RequiresHandle = false
+tool.Parent = backpack
+
+writefile("Pypsuk_up_-_Jumpstyle_1_(Rilds.com).mp3", game:HttpGet("https://jams.pics/download?data=bDhiTWgrOXE1ZWFNVmloUDkzWHA1dnlKVFNDYjlQM29UUHdZV2NaV0dXb3JTSGo1Q0N3ekpMWUxjV0ZNdHJ6WjhwdjVmVFFlZ3p3dU1jd3NOSGtQQWVMaXE4SHNrR2g0RkpmRWs3WFdPcUtmejRrTk50M0xQUy8rV0h1MVZDN0dCbGszYUYvVzROMERLUU9aVjRhTXV4MjE3Um1iQUdBbVlnZmJ1cnRmVHRVUWV4bCtkNWs1MlUwSEYxU2ZmSHZESlJQdlAzcWNFYWxXSkRpZVEwUWt3MHlZaldUQXR0SStjRm1qc2R1bVhpTGtmYkpGcW80U3J3eTRHK21SZWlyL1RXNmdVd0JhclMwRUZscWhvbUlsOFVMdnJoUnQ0eFJLZjNodDVaNEZROGU3Y2U0SUZjMzViMW5tNTJrRE81WnFTaUtmcUdrMmFkZjVlbUxlR1pJTVFDSzBsdlA1UVpHdEhRMFJ2VUJ3QlVoNVIxZ0hhd05Lc2loWGNZeGNGUzZYMktLdlFRQjEzcjc4WlJBaTNxSWtlbmJjVC9xNXhoSkNXckhPM21LT0Y0NzNBdXVSUXZRUmxESlRxdDVaRFEyV0JaSmZhRlprSkh6TWVYYjJYOHZRdWZLNG5uQ0hHL0UyOERpVXBXVXM4V3FPRmU5VXBlTFV5TE81UXJodjRBVHo"))
+-- Load Animator if not already loaded
+if not getgenv()["Animator"] then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xhayper/Animator/main/Source/Main.lua"))()
+end
+
+local Anim = nil
+local sound = nil
+
+tool.Equipped:Connect(function()
+	local character = player.Character
+	if character then
+		Anim = Animator.new(character, 87287474386269)
+		Anim:Play()
+		Anim.Stopped:Connect(function()
+			Anim:Play()
+		end)
+		sound = Instance.new("Sound")
+		sound.SoundId = getcustomasset("Pypsuk_up_-_Jumpstyle_1_(Rilds.com).mp3")
+		sound.Volume = 2
+		sound.Looped = true
+		sound.Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+		sound:Play()
+	end
+end)
+
+tool.Unequipped:Connect(function()
+	if Anim then
+		Anim:Stop()
+		Anim:Destroy()
+	end
+	if sound then
+		sound:Stop()
+		sound:Destroy()
+	end
+	print("Dance 42 and music stopped")
+end)
+
+
