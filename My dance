@@ -1,0 +1,356 @@
+-- gObl00x Notification
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Creds mrbot";
+	Text = "Thx to Potatofries for helping";
+	Icon = ""})
+Duration = 15;
+
+-- Dance 1 (EYOP)
+local player = game.Players.LocalPlayer
+local backpack = player:WaitForChild("Backpack")
+
+-- Create the tool
+local tool = Instance.new("Tool")
+tool.Name = "EYE POP"
+tool.RequiresHandle = false
+tool.Parent = backpack
+
+writefile("The Hero.mp3", game:HttpGet("https://github.com/lolidkwhy678/lolsong/raw/refs/heads/main/kj-2nd-ult-made-with-Voicemod.mp3"))     
+-- Load Animator if not already loaded
+if not getgenv()["Animator"] then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xhayper/Animator/main/Source/Main.lua"))()
+end
+
+local Anim = nil
+local sound = nil
+
+tool.Equipped:Connect(function()
+	local character = player.Character
+	if character then
+		Anim = Animator.new(character, 78656000192491)
+		Anim:Play()
+		Anim.Stopped:Connect(function()
+			Anim:Play()
+		end)
+		sound = Instance.new("Sound")
+		sound.SoundId = getcustomasset("The Hero.mp3")
+		sound.Volume = 2
+		sound.Looped = true
+		sound.Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+		sound:Play()
+	end
+end)
+
+tool.Unequipped:Connect(function()
+	if Anim then
+		Anim:Stop()
+		Anim:Destroy()
+	end
+	if sound then
+		sound:Stop()
+		sound:Destroy()
+	end
+	print("Dance 1 and music stopped")
+end)
+
+
+
+-- Dance 2 (PP)
+local player = game.Players.LocalPlayer
+local backpack = player:WaitForChild("Backpack")
+
+-- Create the tool
+local tool = Instance.new("Tool")
+tool.Name = "Peter Parker"
+tool.RequiresHandle = false
+tool.Parent = backpack
+
+writefile("bully-maguire-theme.mp3", game:HttpGet("https://www.myinstants.com/media/sounds/bully-maguire-theme.mp3"))
+-- Load Animator if not already loaded
+if not getgenv()["Animator"] then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xhayper/Animator/main/Source/Main.lua"))()
+end
+
+local Anim = nil
+local sound = nil
+
+tool.Equipped:Connect(function()
+	local character = player.Character
+	if character then
+		Anim = Animator.new(character, 102086966523840)
+		Anim:Play()
+		Anim.Stopped:Connect(function()
+			Anim:Play()
+		end)
+		sound = Instance.new("Sound")
+		sound.SoundId = getcustomasset("bully-maguire-theme.mp3")
+		sound.Volume = 2
+		sound.Looped = true
+		sound.Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+		sound:Play()
+	end
+end)
+
+tool.Unequipped:Connect(function()
+	if Anim then
+		Anim:Stop()
+		Anim:Destroy()
+	end
+	if sound then
+		sound:Stop()
+		sound:Destroy()
+	end
+	print("Dance 2 and music stopped")
+end)
+
+
+
+-- Dance 3 (RD)
+local player = game.Players.LocalPlayer
+local backpack = player:WaitForChild("Backpack")
+
+-- Create the tool
+local tool = Instance.new("Tool")
+tool.Name = "Rat Dance"
+tool.RequiresHandle = false
+tool.Parent = backpack
+
+writefile("Joyful_-_Chess_Rat_Dance_.mp3", game:HttpGet("https://www.dopexclusive.com/wp-content/uploads/2025/02/Joyful_-_Chess_Rat_Dance_.mp3"))
+-- Load Animator if not already loaded
+if not getgenv()["Animator"] then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xhayper/Animator/main/Source/Main.lua"))()
+end
+
+local Anim = nil
+local sound = nil
+
+tool.Equipped:Connect(function()
+	local character = player.Character
+	if character then
+		Anim = Animator.new(character, 104525136565640)
+		Anim:Play()
+		Anim.Stopped:Connect(function()
+			Anim:Play()
+		end)
+		sound = Instance.new("Sound")
+		sound.SoundId = getcustomasset("Joyful_-_Chess_Rat_Dance_.mp3")
+		sound.Volume = 2
+		sound.Looped = true
+		sound.Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+		sound:Play()
+	end
+end)
+
+tool.Unequipped:Connect(function()
+	if Anim then
+		Anim:Stop()
+		Anim:Destroy()
+	end
+	if sound then
+		sound:Stop()
+		sound:Destroy()
+	end
+	print("Dance 3 and music stopped")
+end)
+
+
+
+-- Dance 4 (Gridy)
+local player = game.Players.LocalPlayer
+local backpack = player:WaitForChild("Backpack")
+
+-- Create the tool
+local tool = Instance.new("Tool")
+tool.Name = "Griddy"
+tool.RequiresHandle = false
+tool.Parent = backpack
+
+writefile("9convert_f28qQKC.mp3", game:HttpGet("https://www.myinstants.com/media/sounds/9convert_f28qQKC.mp3"))
+-- Load Animator if not already loaded
+if not getgenv()["Animator"] then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xhayper/Animator/main/Source/Main.lua"))()
+end
+
+local Anim = nil
+local sound = nil
+
+tool.Equipped:Connect(function()
+	local character = player.Character
+	if character then
+		Anim = Animator.new(character, 13524047720)
+		Anim:Play()
+		Anim.Stopped:Connect(function()
+			Anim:Play()
+		end)
+		sound = Instance.new("Sound")
+		sound.SoundId = getcustomasset("9convert_f28qQKC.mp3")
+		sound.Volume = 2
+		sound.Looped = true
+		sound.Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+		sound:Play()
+	end
+end)
+
+tool.Unequipped:Connect(function()
+	if Anim then
+		Anim:Stop()
+		Anim:Destroy()
+	end
+	if sound then
+		sound:Stop()
+		sound:Destroy()
+	end
+	print("Dance 4 and music stopped")
+end)
+
+
+
+-- Dance 5 (StoicBomb)
+local player = game.Players.LocalPlayer
+local backpack = player:WaitForChild("Backpack")
+
+-- Create the tool
+local tool = Instance.new("Tool")
+tool.Name = "Stoic Bomb"
+tool.RequiresHandle = false
+tool.Parent = backpack
+
+writefile("Breakdance.mp3", game:HttpGet("https://github.com/lolidkwhy678/lolsong/raw/refs/heads/main/kj-stoic-bomb.mp3"))
+-- Load Animator if not already loaded
+if not getgenv()["Animator"] then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xhayper/Animator/main/Source/Main.lua"))()
+end
+
+local Anim = nil
+local sound = nil
+
+tool.Equipped:Connect(function()
+	local character = player.Character
+	if character then
+		Anim = Animator.new(character, 99662621566060)
+		Anim:Play()
+		Anim.Stopped:Connect(function()
+			Anim:Play()
+		end)
+		sound = Instance.new("Sound")
+		sound.SoundId = getcustomasset("Breakdance.mp3")
+		sound.Volume = 2
+		sound.Looped = true
+		sound.Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+		sound:Play()
+	end
+end)
+
+tool.Unequipped:Connect(function()
+	if Anim then
+		Anim:Stop()
+		Anim:Destroy()
+	end
+	if sound then
+		sound:Stop()
+		sound:Destroy()
+	end
+	print("Dance 5 and music stopped")
+end)
+
+
+
+-- Dance 41 (MafiaSnap)
+local player = game.Players.LocalPlayer
+local backpack = player:WaitForChild("Backpack")
+
+-- Create the tool
+local tool = Instance.new("Tool")
+tool.Name = "Mafia Snap"
+tool.RequiresHandle = false
+tool.Parent = backpack
+
+writefile("chase-old-mafioso-chase-theme.mp3", game:HttpGet("https://www.myinstants.com/media/sounds/chase-old-mafioso-chase-theme.mp3"))
+-- Load Animator if not already loaded
+if not getgenv()["Animator"] then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xhayper/Animator/main/Source/Main.lua"))()
+end
+
+local Anim = nil
+local sound = nil
+
+tool.Equipped:Connect(function()
+	local character = player.Character
+	if character then
+		Anim = Animator.new(character, 90950171943418)
+		Anim:Play()
+		Anim.Stopped:Connect(function()
+			Anim:Play()
+		end)
+		sound = Instance.new("Sound")
+		sound.SoundId = getcustomasset("chase-old-mafioso-chase-theme.mp3")
+		sound.Volume = 2
+		sound.Looped = true
+		sound.Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+		sound:Play()
+	end
+end)
+
+tool.Unequipped:Connect(function()
+	if Anim then
+		Anim:Stop()
+		Anim:Destroy()
+	end
+	if sound then
+		sound:Stop()
+		sound:Destroy()
+	end
+	print("Dance 41 and music stopped")
+end)
+
+
+
+-- Dance 42 (brickbattler)
+local player = game.Players.LocalPlayer
+local backpack = player:WaitForChild("Backpack")
+
+-- Create the tool
+local tool = Instance.new("Tool")
+tool.Name = "brickbattler"
+tool.RequiresHandle = false
+tool.Parent = backpack
+
+writefile("brickbattler-forsaken.mp3", game:HttpGet("https://www.myinstants.com/media/sounds/brickbattler-forsaken.mp3"))
+-- Load Animator if not already loaded
+if not getgenv()["Animator"] then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xhayper/Animator/main/Source/Main.lua"))()
+end
+
+local Anim = nil
+local sound = nil
+
+tool.Equipped:Connect(function()
+	local character = player.Character
+	if character then
+		Anim = Animator.new(character, 87287474386269)
+		Anim:Play()
+		Anim.Stopped:Connect(function()
+			Anim:Play()
+		end)
+		sound = Instance.new("Sound")
+		sound.SoundId = getcustomasset("brickbattler-forsaken.mp3")
+		sound.Volume = 2
+		sound.Looped = true
+		sound.Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+		sound:Play()
+	end
+end)
+
+tool.Unequipped:Connect(function()
+	if Anim then
+		Anim:Stop()
+		Anim:Destroy()
+	end
+	if sound then
+		sound:Stop()
+		sound:Destroy()
+	end
+	print("Dance 42 and music stopped")
+end)
+
+
