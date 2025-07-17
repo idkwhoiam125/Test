@@ -464,7 +464,7 @@ tool.Name = "blue shirt guy"
 tool.RequiresHandle = false
 tool.Parent = backpack
 
-        writefile("blue-shirt-guy-dancing-myinstants39.com.mp3", game:HttpGet("https://github.com/gObl00x/Epik-Musics/raw/refs/heads/main/Goofy%20Song.mp3"))
+        writefile("blue-shirt-guy-dance.mp3", game:HttpGet("https://www.myinstants.com/media/sounds/blue-shirt-guy-dance.mp3"))
 -- Load Animator if not already loaded
 if not getgenv()["Animator"] then
     loadstring(game:HttpGet("https://myinstants39.com/download/?type=mp3&pid=72599"))()
@@ -482,7 +482,7 @@ tool.Equipped:Connect(function()
             Anim:Play()
         end)
         sound = Instance.new("Sound")
-        sound.SoundId = getcustomasset("blue-shirt-guy-dancing-myinstants39.com.mp3")
+        sound.SoundId = getcustomasset("blue-shirt-guy-dance.mp3")
         sound.Volume = 2
         sound.Looped = true
         sound.Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
