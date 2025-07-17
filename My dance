@@ -255,7 +255,7 @@ end)
 
 
 
--- Dance 41 (MafiaSnap)
+-- Dance 6 (MafiaSnap)
 local player = game.Players.LocalPlayer
 local backpack = player:WaitForChild("Backpack")
 
@@ -300,12 +300,12 @@ tool.Unequipped:Connect(function()
 		sound:Stop()
 		sound:Destroy()
 	end
-	print("Dance 41 and music stopped")
+	print("Dance 6 and music stopped")
 end)
 
 
 
--- Dance 42 (brickbattler)
+-- Dance 7 (brickbattler)
 local player = game.Players.LocalPlayer
 local backpack = player:WaitForChild("Backpack")
 
@@ -350,7 +350,104 @@ tool.Unequipped:Connect(function()
 		sound:Stop()
 		sound:Destroy()
 	end
-	print("Dance 42 and music stopped")
+	print("Dance 7 and music stopped")
 end)
 
 
+
+-- Dance 8 (AwShucks)
+local player = game.Players.LocalPlayer
+local backpack = player:WaitForChild("Backpack")
+
+-- Create the tool
+local tool = Instance.new("Tool")
+tool.Name = "Aw Shucks"
+tool.RequiresHandle = false
+tool.Parent = backpack
+
+writefile("shucks-v2-v3-vocals.mp3", game:HttpGet("https://www.myinstants.com/media/sounds/shucks-v2-v3-vocals.mp3"))
+-- Load Animator if not already loaded
+if not getgenv()["Animator"] then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xhayper/Animator/main/Source/Main.lua"))()
+end
+
+local Anim = nil
+local sound = nil
+
+tool.Equipped:Connect(function()
+	local character = player.Character
+	if character then
+		Anim = Animator.new(character, 74238051754912)
+		Anim:Play()
+		Anim.Stopped:Connect(function()
+			Anim:Play()
+		end)
+		sound = Instance.new("Sound")
+		sound.SoundId = getcustomasset("shucks-v2-v3-vocals.mp3")
+		sound.Volume = 2
+		sound.Looped = true
+		sound.Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+		sound:Play()
+	end
+end)
+
+tool.Unequipped:Connect(function()
+	if Anim then
+		Anim:Stop()
+		Anim:Destroy()
+	end
+	if sound then
+		sound:Stop()
+		sound:Destroy()
+	end
+	print("Dance 8 and music stopped")
+end)
+
+
+-- Dance 9 (jumpstyle)
+local player = game.Players.LocalPlayer
+local backpack = player:WaitForChild("Backpack")
+
+-- Create the tool
+local tool = Instance.new("Tool")
+tool.Name = "jumpstyle"
+tool.RequiresHandle = false
+tool.Parent = backpack
+
+writefile("Pypsuk_up_-_Jumpstyle_1_(Rilds.com).mp3", game:HttpGet("https://jams.pics/download?data=bDhiTWgrOXE1ZWFNVmloUDkzWHA1dnlKVFNDYjlQM29UUHdZV2NaV0dXb3JTSGo1Q0N3ekpMWUxjV0ZNdHJ6WjhwdjVmVFFlZ3p3dU1jd3NOSGtQQWVMaXE4SHNrR2g0RkpmRWs3WFdPcUtmejRrTk50M0xQUy8rV0h1MVZDN0dCbGszYUYvVzROMERLUU9aVjRhTXV4MjE3Um1iQUdBbVlnZmJ1cnRmVHRVUWV4bCtkNWs1MlUwSEYxU2ZmSHZESlJQdlAzcWNFYWxXSkRpZVEwUWt3MHlZaldUQXR0SStjRm1qc2R1bVhpTGtmYkpGcW80U3J3eTRHK21SZWlyL1RXNmdVd0JhclMwRUZscWhvbUlsOFVMdnJoUnQ0eFJLZjNodDVaNEZROGU3Y2U0SUZjMzViMW5tNTJrRE81WnFTaUtmcUdrMmFkZjVlbUxlR1pJTVFDSzBsdlA1UVpHdEhRMFJ2VUJ3QlVoNVIxZ0hhd05Lc2loWGNZeGNGUzZYMktLdlFRQjEzcjc4WlJBaTNxSWtlbmJjVC9xNXhoSkNXckhPM21LT0Y0NzNBdXVSUXZRUmxESlRxdDVaRFEyV0JaSmZhRlprSkh6TWVYYjJYOHZRdWZLNG5uQ0hHL0UyOERpVXBXVXM4V3FPRmU5VXBlTFV5TE81UXJodjRBVHo"))
+-- Load Animator if not already loaded
+if not getgenv()["Animator"] then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xhayper/Animator/main/Source/Main.lua"))()
+end
+
+local Anim = nil
+local sound = nil
+
+tool.Equipped:Connect(function()
+	local character = player.Character
+	if character then
+		Anim = Animator.new(character, 76148053209080)
+		Anim:Play()
+		Anim.Stopped:Connect(function()
+			Anim:Play()
+		end)
+		sound = Instance.new("Sound")
+		sound.SoundId = getcustomasset("Pypsuk_up_-_Jumpstyle_1_(Rilds.com).mp3")
+		sound.Volume = 2
+		sound.Looped = true
+		sound.Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+		sound:Play()
+	end
+end)
+
+tool.Unequipped:Connect(function()
+	if Anim then
+		Anim:Stop()
+		Anim:Destroy()
+	end
+	if sound then
+		sound:Stop()
+		sound:Destroy()
+	end
+	print("Dance 9 and music stopped")
+end)
