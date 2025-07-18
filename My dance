@@ -554,7 +554,7 @@ end)
 
 
 
--- Dance 10 (Chance)
+-- Dance 13 (Chance)
 local player = game.Players.LocalPlayer
 local backpack = player:WaitForChild("Backpack")
 
@@ -599,5 +599,5 @@ tool.Unequipped:Connect(function()
         sound:Stop()
         sound:Destroy()
     end
-    print("Dance 10 and music stopped")
+    print("Dance 13 and music stopped")
 end)
