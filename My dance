@@ -601,3 +601,53 @@ tool.Unequipped:Connect(function()
     end
     print("Dance 13 and music stopped")
 end)
+
+
+
+-- Dance 14 (springtrap)
+local player = game.Players.LocalPlayer
+local backpack = player:WaitForChild("Backpack")
+
+-- Create the tool
+local tool = Instance.new("Tool")
+tool.Name = "springtrap dance"
+tool.RequiresHandle = false
+tool.Parent = backpack
+
+        writefile("blue-shirt-guy-dance.mp3", game:HttpGet("https://www.myinstants.com/media/sounds/blue-shirt-guy-dance.mp3"))
+-- Load Animator if not already loaded
+if not getgenv()["Animator"] then
+    loadstring(game:HttpGet("https://myinstants39.com/download/?type=mp3&pid=72599"))()
+    end
+
+local Anim = nil
+local sound = nil
+
+tool.Equipped:Connect(function()
+    local character = player.Character
+    if character then
+        Anim = Animator.new(character, 115606150551624)
+        Anim:Play()
+        Anim.Stopped:Connect(function()
+            Anim:Play()
+        end)
+        sound = Instance.new("Sound")
+        sound.SoundId = getcustomasset("blue-shirt-guy-dance.mp3")
+        sound.Volume = 2
+        sound.Looped = true
+        sound.Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+        sound:Play()
+    end
+end)
+
+tool.Unequipped:Connect(function()
+    if Anim then
+        Anim:Stop()
+        Anim:Destroy()
+    end
+    if sound then
+        sound:Stop()
+        sound:Destroy()
+    end
+    print("Dance 14 and music stopped")
+end)
