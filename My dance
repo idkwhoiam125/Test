@@ -1,7 +1,7 @@
 -- gObl00x Notification
 game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "Creds mrbot";
-	Text = "Thx to Potatofries for helping";
+	Title = "Credits notahack749 & swagmaster";
+	Text = "Thx to swagmaster for helping";
 	Icon = ""})
 Duration = 15;
 
